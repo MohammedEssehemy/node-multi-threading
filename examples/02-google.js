@@ -15,7 +15,7 @@ if(isMainThread) {
 		if(code != 0)
 	      	console.error(new Error(`Worker stopped with exit code ${code}`))
    });
-
+console.log('before request');
 	request.get('http://www.google.com', (err, resp) => {
 		if(err) {
 			return console.error(err);

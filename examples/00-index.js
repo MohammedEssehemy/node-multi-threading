@@ -19,7 +19,9 @@ function mainBody () {
     initiateWorker();
 
     // traversing list in main method with specific interval
-    interval = setInterval(function(){ processDataInMainThread(); }, 1000);
+    interval = setInterval(function(){
+      processDataInMainThread();
+    }, 1000);
 }
 
 // index and value of list will be consoled
